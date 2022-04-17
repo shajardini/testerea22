@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Primeiro from './componentes/basicos/Primeiro'
+import ComParametro from './componentes/basicos/ComParametro'
+import Fragmento from './componentes/basicos/Fragmento'
+import NumeroAle from './componentes/basicos/NumeroAle'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default function App(props) {
+    return (
+        <div>
+            <h1> FUNDAMENTOS REACT</h1>
+            <NumeroAle min={1} max={100}></NumeroAle>
+
+            <Fragmento></Fragmento>
+
+            <ComParametro titulo="Hoje é quinta feira!!" subtitulo='véspera de feriado!!'></ComParametro>
+            <Primeiro></Primeiro>
+            <ComParametro titulo="Título1" subtitulo='sub1'></ComParametro>
+            <ComParametro titulo="Título2" subtitulo='sub2'></ComParametro >
+            <ComParametro titulo='titulo3' subtitulo='sub3'></ComParametro>
+
+
+
+
+
+
+
+        </div>
+    )
+
 }
-
-export default App;
